@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "gatsby";
 
-export default function Footer() {
+const Footer: React.VFC = () => {
   const footerStyle = {
-    position: "fixed",
+    position: "relative",
     bottom: 0,
     width: "100%",
-    height: "20%",
+    height: "10%",
   };
 
   return (
-    <header style={footerStyle}>
+    <footer style={footerStyle}>
       <p>Footer sample</p>
-    </header>
+    </footer>
   );
-}
+};
+
+export default Footer;
